@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "em-websocket"
+gem "jekyll-remote-theme"
 gem "jekyll-watch"
 gem "jekyll", "~> 4.2.2"
 gem "minima", "~> 2.5" 
