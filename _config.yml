@@ -1,0 +1,13 @@
+theme: minima
+remote_theme: jekyll/minima
+exclude:
+  - .bundle/
+  - .dockerignore
+  - .jekyll-cache/
+  - docker-compose.yml
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - start.sh
+  - vendor/

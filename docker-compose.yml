@@ -1,0 +1,20 @@
+services:
+  jekyll:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: >
+      bundle exec jekyll serve 
+        --host 0.0.0.0 
+        --livereload 
+        --livereload-port 35729
+        --force_polling
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll
+      - /srv/jekyll/_site
+      - /srv/jekyll/.jekyll-cache
+    environment:
+      - JEKYLL_ENV=development
